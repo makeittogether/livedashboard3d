@@ -1,0 +1,65 @@
+
+    <div class="container" [style.backgroundColor]="'grey'" >
+      <!-- Control the column width, and how they should appear on different devices -->
+      <div class="row" >
+        <div class="col-sm-6"  >
+            <mat-card >
+               <mat-card-content>
+                
+                 
+          <app-totaloppallchannel3d [olsOpp]=olsOpp [ccOpp]=ccOpp [totalOpp]=totalOpp ></app-totaloppallchannel3d>
+        </mat-card-content>       
+        </mat-card >
+              
+        </div>
+        <div class="col-sm-6" >
+            <mat-card >
+                <mat-card-content>
+                   
+                    
+                  <app-ols-picharts3d [olsOpp]=olsOpp [olsInProgress]=olsInProgress [olsNew]=olsNew></app-ols-picharts3d>
+                  </mat-card-content>       
+                </mat-card >
+         
+        </div>
+      </div>
+      <br>
+     
+      
+      
+    </div>
+   
+    <div class="container" [style.backgroundColor]="'grey'">
+        <!-- Control the column width, and how they should appear on different devices -->
+        <div class="row">
+          <div class="col-sm-6" >
+              <mat-card >
+                 <mat-card-content>
+                    <h6>CallCenter Opp| Total:300 | OLS:200 | callcenter:100</h6>
+                    <app-ccpiechart3d></app-ccpiechart3d>
+          </mat-card-content>       
+          </mat-card >
+                
+          </div>
+          <div class="col-sm-6" >
+              <mat-card >
+                  <mat-card-content>
+                      <h6>Today's Opp | Total:300 | OLS:200 | callcenter:100</h6>
+                      <app-dailyopp3d></app-dailyopp3d>
+                    </mat-card-content>       
+                  </mat-card >
+           
+          </div>
+        </div>
+        <br>
+       
+        
+        
+      </div>
+
+      <div class="ticker-wrap body">
+          <div class="ticker">
+            <div class="ticker__item">Today's Opportunities | Total Opp : {{totalOpp}} Closed Opp: {{dailyClosed}} | OLS Opp: {{olsOpp}} In Progress :  {{olsInProgress}} New : {{olsNew}} | Call Center Opp : {{ccOpp}} In Progress : {{ccInProgress}} New : {{ccNew}} </div>
+            
+          </div>
+          </div>
